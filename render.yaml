@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: hackrx-api
+    env: python
+    plan: free
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
+    envVars:
+      - key: PORT
+        value: 10000
+    region: oregon
+    branch: main
+    repo: https://github.com/rishi1509/hackrx-api.git

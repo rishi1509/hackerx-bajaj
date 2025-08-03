@@ -1,10 +1,15 @@
-
-# Ignore Python virtual env
-venv/
 __pycache__/
 *.pyc
-*.pkl
-*.log
-llm_response.json
-*.pdf
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
 .env
+.DS_Store
+.idea/
+*.swp
+*.DS_Store
+metadata.json
+*.log

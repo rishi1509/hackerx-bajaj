@@ -3,13 +3,12 @@ import faiss
 import numpy as np
 import fitz  # PyMuPDF
 from sentence_transformers import SentenceTransformer
-from dotenv import load_dotenv
 from lightweight_llm import ask_lightweight_llm
 import os
 import ast
 import re
 
-load_dotenv()
+
 
 # === Load & Process PDF ===
 def load_pdf_chunks(file_path, chunk_size=500):

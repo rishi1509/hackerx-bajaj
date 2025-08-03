@@ -1,0 +1,10 @@
+
+# Ignore Python virtual env
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.log
+llm_response.json
+*.pdf
+.env
